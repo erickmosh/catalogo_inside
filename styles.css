@@ -1,0 +1,118 @@
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.titulo h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.catalogo {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+}
+
+.producto {
+  width: 200px;
+  margin: 10px;
+}
+.producto img {
+  width: 300px;
+  height: 300px;
+}
+
+.descripcion {
+  text-align: center;
+}
+
+a {
+  display: block;
+  margin: 10px auto;
+}
+
+.detalles {
+  margin-top: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column; /* Agregado */
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.producto img {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+  transform: scale(2.1);
+}
+
+.descripcion {
+  flex: 1;
+  margin-top: 10px; /* Modificado */
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.descripcion h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+.contenedor-productos {
+  /* ... otros estilos ... */
+  width: 900px; /* Ajusta el valor según tus necesidades */
+}
+
+.descripcion {
+  flex: 1;
+  margin-left: 0px;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  white-space: normal;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+}
